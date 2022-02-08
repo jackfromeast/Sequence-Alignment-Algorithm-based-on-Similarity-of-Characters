@@ -1,16 +1,6 @@
 # Variant-Needleman-Wunsch-sequence-alignment-algorithm-based-on-similarity-of-characters
 基于相似度的序列对齐算法
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-
 ### 0 背景引入
 
 序列对齐算法源自于计算生物学，通过最大化局部相似性来对齐DNA序列、蛋白质序列等生物序列。
