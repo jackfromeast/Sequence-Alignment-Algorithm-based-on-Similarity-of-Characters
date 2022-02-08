@@ -132,7 +132,7 @@ def getShapeCode(one_chi_word):
                 
 
 def getHanziStrokesDict():
-    strokes_filepath = pkg_resources.resource_filename(__name__, "../../data/zh_data/utf8_strokes.txt")
+    strokes_filepath = pkg_resources.resource_filename(__name__, "../zh_data/utf8_strokes.txt")
     with open(strokes_filepath, 'r', encoding='UTF-8') as f:#文件特征：
         for line in f:
             line = line.split()
@@ -140,7 +140,7 @@ def getHanziStrokesDict():
 
 
 def getHanziStructureDict():
-    structure_filepath = pkg_resources.resource_filename(__name__, "../../data/zh_data/unihan_structure.txt")
+    structure_filepath = pkg_resources.resource_filename(__name__, "../zh_data/unihan_structure.txt")
     with open(structure_filepath, 'r', encoding='UTF-8') as f:#文件特征：U+4EFF\t仿\t⿰亻方\n
         for line in f:
             line = line.split()
@@ -149,8 +149,8 @@ def getHanziStructureDict():
 
 
 def generateHanziSSCFile(): 
-    readFilePath = pkg_resources.resource_filename(__name__, "../../data/zh_data/unihan_structure.txt")
-    writeFilePath = pkg_resources.resource_filename(__name__, "../../data/zh_data/hanzi_ssc_res.txt")
+    readFilePath = pkg_resources.resource_filename(__name__, "../zh_data/unihan_structure.txt")
+    writeFilePath = pkg_resources.resource_filename(__name__, "../zh_data/hanzi_ssc_res.txt")
     writeFile = open(writeFilePath, "w", encoding='UTF-8')
     with open(readFilePath, 'r', encoding='UTF-8') as f:#文件特征：U+4EFF\t仿\t⿰亻方\n
         for line in f:
@@ -165,7 +165,7 @@ def generateHanziSSCFile():
 
 hanziSSCDict = {}#汉子：SSC码   
 def getHanziSSCDict():
-    hanzi_ssc_filepath = pkg_resources.resource_filename(__name__, "../../data/zh_data/hanzi_ssc_res.txt")
+    hanzi_ssc_filepath = pkg_resources.resource_filename(__name__, "../data/zh_data/hanzi_ssc_res.txt")
     with open(hanzi_ssc_filepath, 'r', encoding='UTF-8') as f:#文件特征：U+4EFF\t仿\t音形码\n
         for line in f:
             line = line.split()
