@@ -77,3 +77,6 @@
 结果点击放大:
 
 ![运行示例](sequence-alignment-algorithm-based-on-similarity-of-characters/%E8%BF%90%E8%A1%8C%E7%A4%BA%E4%BE%8B.png)
+
+### 4 最后
+其中汉字音形码的生成参考自：https://github.com/qingyujean/ssc 非常感谢！
