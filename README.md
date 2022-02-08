@@ -34,7 +34,7 @@
 
 ### 2 基于字符相似度匹配的序列对齐算法
 
-本序列对齐算法以Needleman-Wunsch算法为基础，借鉴其动态规划的思想并引入字符相似度计算函数完成。具体实现细节详见[链接](https://jackfromeast.site/2022-02/sequence-alignment-algorithm-based-on-similarity-of-characters.html)
+**本序列对齐算法以Needleman-Wunsch算法为基础，借鉴其动态规划的思想并引入字符相似度计算函数完成。具体实现细节详见https://jackfromeast.site/2022-02/sequence-alignment-algorithm-based-on-similarity-of-characters.html**
 
 #### 2.1 矩阵初始化
 
@@ -73,5 +73,6 @@
     # 序列对各位置相似度评分
     print(variantNW.get_aligned_seq_score(aligned_seq1, aligned_seq2))
 ```
-
+<br>
+结果点击放大:
 ![运行示例](sequence-alignment-algorithm-based-on-similarity-of-characters/%E8%BF%90%E8%A1%8C%E7%A4%BA%E4%BE%8B.png)
